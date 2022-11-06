@@ -1,0 +1,35 @@
+Train_baseline VGG16(upto epoch 20):
+
+epoch=020,  lr=1.0e-03,  train/loss_nll=3.7476e-03,  train/accuracy=84.45%,  train/auc=86.77%,  train/ap_success=97.24%,  train/ap_errors=51.40%,  val/loss_nll=3.7115e-03,  val/accuracy=84.36%,  val/auc=87.63%,  val/ap_success=97.48%,  val/ap_errors=53.07%,  test/loss_nll=3.2861e-03,  test/accuracy=86.21%,  test/auc=88.12%,  test/ap_success=97.89%,  test/ap_errors=49.23%,  
+
+Train_confidnet VGG16 (upto epoch 20):
+epoch=020,  lr=1.0e-04,  train/loss_confid=2.1679e-04,  train/accuracy=85.74%,  train/auc=89.27%,  train/ap_success=98.05%,  train/ap_errors=53.83%,  val/loss_confid=2.4322e-04,  val/accuracy=84.88%,  val/auc=89.74%,  val/ap_success=97.98%,  val/ap_errors=58.61%,  test/loss_confid=2.4220e-04,  test/accuracy=86.21%,  test/auc=89.27%,  test/ap_success=98.10%,  test/ap_errors=52.38%,  
+
+
+Test:
+
+Nearest threshold 95% TPR value: 0.950470
+Threshold 95% TPR value: 0.404019
+2022-10-19 19:13:51,539 978015a17d78 __main__[2401] INFO Results
+----------------------------------------------------------------
+test/accuracy
+{'value': 0.8621, 'string': '86.21%'}
+----------------------------------------------------------------
+test/auc
+{'value': 0.892688763857148, 'string': '89.27%'}
+----------------------------------------------------------------
+test/ap_success
+{'value': 0.9809914912079262, 'string': '98.10%'}
+----------------------------------------------------------------
+test/ap_errors
+{'value': 0.5237859376576861, 'string': '52.38%'}
+----------------------------------------------------------------
+test/fpr_at_95tpr
+{'value': 0.5946337926033357, 'string': '59.46%'}
+----------------------------------------------------------------
+test/aurc
+{'value': 0.026894947341145607, 'string': '26.89'}
+----------------------------------------------------------------
+test/e-aurc
+{'value': 0.016916798712236412, 'string': '16.92'}
+----------------------------------------------------------------
