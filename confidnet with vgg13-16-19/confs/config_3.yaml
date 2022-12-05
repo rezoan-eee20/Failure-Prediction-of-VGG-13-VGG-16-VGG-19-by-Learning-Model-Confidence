@@ -1,0 +1,40 @@
+# Data parameters
+data:
+    dataset: cifar10
+    data_dir: data/cifar10-data
+    input_size: [32,32]
+    input_channels: 3
+    num_classes: 10
+    valid_size: 0.1
+
+# Training parameters
+training:
+    output_folder: /content/drive/MyDrive/Project-511/VGG19/baseline
+    task: classification
+    learner: default
+    nb_epochs: 20
+    batch_size: 128
+    loss:
+        name: cross_entropy
+    optimizer:
+        name: adam
+        lr: 0.001
+        #momentum: 0.9
+        #weight_decay: 0.0005
+    lr_schedule:
+        #name: multi_step
+        #milestones: [50, 120, 200, 250]
+    metrics: ['accuracy', 'auc', 'ap_success', 'ap_errors']
+    pin_memory: False
+    num_workers: 2
+    augmentations:
+        hflip: True
+        rotate: 15
+        #rcrop: 32
+        normalize: [[0.4914, 0.4822, 0.4465], [0.2023, 0.1994, 0.2010]]
+
+# Model parameters
+model:
+    name: vgg19
+    resume: vgg19
+
